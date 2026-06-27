@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "ciphered-resource-loader",
+  "version": "1.0.0",
+  "name": "Ciphered Resource Loader",
+  "description": "加密资源包加载与服务端下发模组，支持可选/必选资源包、内存解密防提取",
+  "authors": ["Wyatt"],
+  "license": "MIT",
+  "icon": "assets/ciphered-resource-loader/icon.png",
+
+  "entrypoints": {
+    "server": [
+      "top.wyatt.CipheredResourceLoader"
+    ],
+    "client": [
+      "top.wyatt.client.CipheredResourceLoaderClient"
+    ]
+  },
+
+  "mixins": [
+    "ciphered-resource-loader.mixins.json"
+  ],
+  "client": {
+    "mixins": [
+      "ciphered-resource-loader.client.mixins.json"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "1.20.1",
+    "java": ">=17"
+  }
+}
