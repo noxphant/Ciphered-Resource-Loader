@@ -1,6 +1,7 @@
 # Ciphered Resource Loader
 
 **服务端下发模组** — 支持可选/必选资源包，多线程，可限速
+
 **加密资源包加载** — AES-GCM 内存解密防提取（本部分未完工）
 
 ## 功能特性
@@ -59,7 +60,8 @@
 | `/crl download_packs` | 打开资源包下载管理界面 |
 
 ## 配置文件
-请将您要分发的资源包放入服务端的'CRL_packs'文件夹，并按以下要求填写crl_config.json
+请将您要分发的资源包放入服务端的'CRL_packs'文件夹，并按以下要求填写'crl_config.json'
+
 配置文件位于服务端 `CRL_packs/crl_config.json`：
 
 ```json
